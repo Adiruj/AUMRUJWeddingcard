@@ -12,7 +12,7 @@ export default function Home() {
       <div className="flex flex-col gap-2">
         {/**Home */}
         <section id="home">
-          <Image alt="HeroUI hero Image" radius="none" src="/gallery/21.jpg" />
+          <Image alt="HeroUI hero Image" radius="none" src="/gallery/21.JPG" />
 
           <div className="flex flex-col mx-4">
             <h1 className="text-center text-sm pt-8 font-kanit">

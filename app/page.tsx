@@ -1,0 +1,202 @@
+import { Image } from "@heroui/image";
+import { Button } from "@heroui/button";
+import { MapPin } from "lucide-react";
+import CountdownTimer from "@/components/countdown";
+import GalleryCarousel from "@/components/garllery";
+import GoogleMap from "@/components/googlemap";
+
+export default function Home() {
+  return (
+    <section className="w-full min-h-screen relative pb-24">
+      <div className="flex flex-col gap-2">
+        {/**Home */}
+        <section id="home">
+          <Image alt="HeroUI hero Image" src="/gallery/21.jpg" radius="none" />
+
+          <div className="flex flex-col mx-4">
+            <h1 className="text-center text-sm pt-8 font-kanit">
+              THE HONOUR OF YOUR PRESENCE IS REQUESTED AT THE MARRIAGE
+              CELERATION OF
+            </h1>
+
+            {/* Ruj & Aum Profile */}
+            <div className="flex flex-col sm:flex-row items-center justify-center text-center pt-8 gap-12">
+              {/* Aum */}
+              <div className="flex flex-col items-center gap-4">
+                <Image
+                  alt="HeroUI hero Image"
+                  src="/main/A02.png"
+                  radius="full"
+                  height={300}
+                  width={300}
+                />
+                <h2 className="text-xl font-semibold">
+                  นางสาว พัชรียา อุตมา (อัม)
+                </h2>
+              </div>
+
+              {/* Ruj */}
+              <div className="flex flex-col items-center gap-4">
+                <Image
+                  alt="HeroUI hero Image"
+                  src="/main/R02.png"
+                  radius="full"
+                  height={300}
+                  width={300}
+                />
+                <h2 className="text-xl font-semibold">
+                  นาย อดิรุจ สองสีใส (รุจ)
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="program">
+          <div className="flex flex-col mx-4 ">
+            {/**Countdown to Date */}
+            <div className="flex flex-col justify-items-center items-center pt-10">
+              <Image
+                alt="HeroUI hero Image"
+                src="/main/logo01.png"
+                radius="full"
+                width={120}
+              />
+              <h1 className="text-center text-medium mx-14">
+                LET'S CELEBRATE TOGETHER ON OUR SPECIAL DAY ON
+              </h1>
+              <h1 className="text-center text-5xl pt-6 mx-6">01 NOV 2025</h1>
+              <div className="pt-6">
+                <CountdownTimer />
+              </div>
+            </div>
+          </div>
+          {/**Schedule */}
+          <div className="flex flex-col justify-items-center items-center pt-10 gap-4">
+            <h1>SCHEDULE</h1>
+            <Image
+              alt="HeroUI hero Image"
+              src="/gallery/12.jpg"
+              radius="none"
+            />
+            <Image
+              alt="HeroUI hero Image"
+              src="/main/plans.png"
+              width={300}
+              radius="none"
+            />
+          </div>
+        </section>
+
+        <section id="gallery">
+          {/**Gallery */}
+          <div className="w-full max-w-screen-md mx-auto px-4 flex flex-col justify-items-center items-center pt-10 gap-4">
+            <h1>GALLERY</h1>
+            <GalleryCarousel />
+          </div>
+
+          {/**Google Form */}
+          <div className="flex flex-col justify-items-center items-center text-center pt-10 gap-4 mx-6">
+            <h1 className="italic text-gray-700">
+              "เพื่อให้เราสามารถวางแผนในการดูแลท่าน
+              ซึ่งเป็นแขกคนสำคัญได้อย่างเต็มที่
+              ขอรบกวนทุกท่านทำแบบตอบรับการเข้าร่วมงานให้เราด้วยนะคะ/ครับ"
+            </h1>
+            <h1 className="italic text-gray-700">
+              HOPE TO SEE YOU AT OUR WEDDING
+            </h1>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf3tQf2DqjnpyWCZt8pnOb6LMnKSdAB_sTFaByIfQucD6ZXWw/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
+              <Button className="w-full" variant="bordered" color="primary">
+                กดเพื่อลงทะเบียนการเข้าร่วมงาน
+              </Button>
+            </a>
+          </div>
+        </section>
+
+        <section id="location">
+          {/** Location */}
+          <div className="flex flex-col justify-items-center items-center text-center pt-10 gap-2 mx-6">
+            <MapPin />
+            <h1>ลำปางรีสอร์ท</h1>
+            <h1>Lampang Resort & Restaurant</h1>
+            <GoogleMap />
+            <div className="flex flex-row gap-2 pt-2">
+              <MapPin className="w-5 h-5" />
+              <h1 className="text-sm font-kanit">
+                339 Phichai, Mueang Lampang District, Lampang 52000
+              </h1>
+            </div>
+            <a
+              href="https://maps.app.goo.gl/Dr22PqEbNsgdYwVLA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
+              <Button color="primary" variant="bordered" className="w-full">
+                DIRECTION
+              </Button>
+            </a>
+          </div>
+
+          {/** Promtpay */}
+          <div className="flex flex-col justify-items-center items-center text-center pt-10 gap-2 mx-6">
+            <h1>QR PROMPTPAY</h1>
+            <Image
+              alt="HeroUI hero Image"
+              src="/main/qrpay02.jpg"
+              radius="none"
+              width={150}
+            />
+          </div>
+
+          {/* Contact */}
+          <div className="flex flex-col items-center text-center pt-10 gap-4 mx-6">
+            <h1>CONTACT</h1>
+            <div className="flex flex-col gap-2 text-sm text-gray-600 font-kanit">
+              <div className="flex items-center gap-2">
+                <span className="font-medium text-gray-700">Tel AUM:</span>
+                <a
+                  href="tel:0656519897"
+                  className="text-blue-500 hover:underline"
+                >
+                  065-651-9897
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="font-medium text-gray-700">Tel RUJ:</span>
+                <a
+                  href="tel:0909091463"
+                  className="text-blue-500 hover:underline"
+                >
+                  090-909-1463
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Credit */}
+          <div className="flex justify-center items-center gap-2 pt-10 mx-6">
+            <span className="text-sm text-gray-500 font-kanit">
+              Developed by
+            </span>
+            <a
+              href="https://github.com/Adiruj" // ลิงก์ตัวอย่าง
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 font-semibold hover:underline"
+            >
+              NumChock
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+  );
+}
+
+//flex flex-col items-center justify-center gap-4 py-8 md:py-10

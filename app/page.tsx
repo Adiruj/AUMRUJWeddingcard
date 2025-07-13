@@ -1,6 +1,7 @@
 import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
 import { MapPin } from "lucide-react";
+
 import CountdownTimer from "@/components/countdown";
 import GalleryCarousel from "@/components/garllery";
 import GoogleMap from "@/components/googlemap";
@@ -11,7 +12,7 @@ export default function Home() {
       <div className="flex flex-col gap-2">
         {/**Home */}
         <section id="home">
-          <Image alt="HeroUI hero Image" src="/gallery/21.jpg" radius="none" />
+          <Image alt="HeroUI hero Image" radius="none" src="/gallery/21.jpg" />
 
           <div className="flex flex-col mx-4">
             <h1 className="text-center text-sm pt-8 font-kanit">
@@ -25,9 +26,9 @@ export default function Home() {
               <div className="flex flex-col items-center gap-4">
                 <Image
                   alt="HeroUI hero Image"
-                  src="/main/A02.png"
-                  radius="full"
                   height={300}
+                  radius="full"
+                  src="/main/A02.png"
                   width={300}
                 />
                 <h2 className="text-xl font-semibold">
@@ -39,9 +40,9 @@ export default function Home() {
               <div className="flex flex-col items-center gap-4">
                 <Image
                   alt="HeroUI hero Image"
-                  src="/main/R02.png"
-                  radius="full"
                   height={300}
+                  radius="full"
+                  src="/main/R02.png"
                   width={300}
                 />
                 <h2 className="text-xl font-semibold">
@@ -58,12 +59,12 @@ export default function Home() {
             <div className="flex flex-col justify-items-center items-center pt-10">
               <Image
                 alt="HeroUI hero Image"
-                src="/main/logo01.png"
                 radius="full"
+                src="/main/logo01.png"
                 width={120}
               />
               <h1 className="text-center text-medium mx-14">
-                LET'S CELEBRATE TOGETHER ON OUR SPECIAL DAY ON
+                LET&apos;S CELEBRATE TOGETHER ON OUR SPECIAL DAY ON
               </h1>
               <h1 className="text-center text-5xl pt-6 mx-6">01 NOV 2025</h1>
               <div className="pt-6">
@@ -76,14 +77,14 @@ export default function Home() {
             <h1>SCHEDULE</h1>
             <Image
               alt="HeroUI hero Image"
-              src="/gallery/12.jpg"
               radius="none"
+              src="/gallery/12.jpg"
             />
             <Image
               alt="HeroUI hero Image"
+              radius="none"
               src="/main/plans.png"
               width={300}
-              radius="none"
             />
           </div>
         </section>
@@ -98,20 +99,20 @@ export default function Home() {
           {/**Google Form */}
           <div className="flex flex-col justify-items-center items-center text-center pt-10 gap-4 mx-6">
             <h1 className="italic text-gray-700">
-              "เพื่อให้เราสามารถวางแผนในการดูแลท่าน
+              &quot;เพื่อให้เราสามารถวางแผนในการดูแลท่าน
               ซึ่งเป็นแขกคนสำคัญได้อย่างเต็มที่
-              ขอรบกวนทุกท่านทำแบบตอบรับการเข้าร่วมงานให้เราด้วยนะคะ/ครับ"
+              ขอรบกวนทุกท่านทำแบบตอบรับการเข้าร่วมงานให้เราด้วยนะคะ/ครับ&quot;
             </h1>
             <h1 className="italic text-gray-700">
               HOPE TO SEE YOU AT OUR WEDDING
             </h1>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSf3tQf2DqjnpyWCZt8pnOb6LMnKSdAB_sTFaByIfQucD6ZXWw/viewform?usp=dialog"
-              target="_blank"
-              rel="noopener noreferrer"
               className="w-full"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf3tQf2DqjnpyWCZt8pnOb6LMnKSdAB_sTFaByIfQucD6ZXWw/viewform?usp=dialog"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <Button className="w-full" variant="bordered" color="primary">
+              <Button className="w-full" color="primary" variant="bordered">
                 กดเพื่อลงทะเบียนการเข้าร่วมงาน
               </Button>
             </a>
@@ -132,12 +133,12 @@ export default function Home() {
               </h1>
             </div>
             <a
-              href="https://maps.app.goo.gl/Dr22PqEbNsgdYwVLA"
-              target="_blank"
-              rel="noopener noreferrer"
               className="w-full"
+              href="https://maps.app.goo.gl/Dr22PqEbNsgdYwVLA"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <Button color="primary" variant="bordered" className="w-full">
+              <Button className="w-full" color="primary" variant="bordered">
                 DIRECTION
               </Button>
             </a>
@@ -148,8 +149,8 @@ export default function Home() {
             <h1>QR PROMPTPAY</h1>
             <Image
               alt="HeroUI hero Image"
-              src="/main/qrpay02.jpg"
               radius="none"
+              src="/main/qrpay02.jpg"
               width={150}
             />
           </div>
@@ -161,8 +162,8 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <span className="font-medium text-gray-700">Tel AUM:</span>
                 <a
-                  href="tel:0656519897"
                   className="text-blue-500 hover:underline"
+                  href="tel:0656519897"
                 >
                   065-651-9897
                 </a>
@@ -170,8 +171,8 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <span className="font-medium text-gray-700">Tel RUJ:</span>
                 <a
-                  href="tel:0909091463"
                   className="text-blue-500 hover:underline"
+                  href="tel:0909091463"
                 >
                   090-909-1463
                 </a>
@@ -185,10 +186,10 @@ export default function Home() {
               Developed by
             </span>
             <a
-              href="https://github.com/Adiruj" // ลิงก์ตัวอย่าง
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-blue-500 font-semibold hover:underline"
+              href="https://github.com/Adiruj" // ลิงก์ตัวอย่าง
+              rel="noopener noreferrer"
+              target="_blank"
             >
               NumChock
             </a>

@@ -78,13 +78,15 @@ export default function Home() {
             <Image
               alt="HeroUI hero Image"
               radius="none"
-              src="/gallery/12.jpg"
+              src="/gallery/12.JPG"
             />
             <Image
               alt="HeroUI hero Image"
+              className="sm:mx-auto"
+              height={0}
               radius="none"
-              src="/main/plans.png"
-              width={300}
+              src="/main/plans.svg"
+              width={410}
             />
           </div>
         </section>

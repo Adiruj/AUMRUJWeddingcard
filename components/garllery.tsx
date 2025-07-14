@@ -47,7 +47,7 @@ export default function GalleryCarousel() {
           <div key={index} className="w-full">
             <img
               src={src}
-              className="w-full h-auto max-h-[500px] object-contain rounded-xl"
+              className="w-full h-auto sm:max-h-[500px] md:max-h-[900px] object-contain rounded-xl"
               alt={`img-${index}`}
             />
           </div>

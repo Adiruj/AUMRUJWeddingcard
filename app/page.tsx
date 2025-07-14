@@ -8,22 +8,35 @@ import GoogleMap from "@/components/googlemap";
 
 export default function Home() {
   return (
-    <section className="w-full min-h-screen relative pb-24">
+    <section className="w-full sm:min-h-screen relative pb-24">
       <div className="flex flex-col gap-2">
         {/**Home */}
         <section id="home">
-          <Image alt="HeroUI hero Image" radius="none" src="/gallery/21.JPG" />
+          <div className="sm:hidden w-full">
+            <Image
+              alt="HeroUI hero Image"
+              radius="none"
+              src="/gallery/21.JPG"
+            />
+          </div>
+          <div className="hidden sm:block w-full">
+            <Image
+              alt="HeroUI hero Image"
+              radius="none"
+              src="/gallery/01.JPEG"
+            />
+          </div>
 
           <div className="flex flex-col mx-4">
-            <h1 className="text-center text-sm pt-8 font-kanit">
+            <h1 className="text-center sm:text-sm md:text-4xl pt-8 md:pt-14 font-kanit">
               THE HONOUR OF YOUR PRESENCE IS REQUESTED AT THE MARRIAGE
               CELERATION OF
             </h1>
 
             {/* Ruj & Aum Profile */}
-            <div className="flex flex-col sm:flex-row items-center justify-center text-center pt-8 gap-12">
+            <div className="flex flex-col sm:flex-row items-center justify-center text-center pt-8 md:pt-20 gap-12 md:gap-32">
               {/* Aum */}
-              <div className="flex flex-col items-center gap-4">
+              <div className="flex flex-col items-center gap-4 md:gap-10">
                 <Image
                   alt="HeroUI hero Image"
                   height={300}
@@ -31,13 +44,13 @@ export default function Home() {
                   src="/main/A02.png"
                   width={300}
                 />
-                <h2 className="text-xl font-semibold">
+                <h2 className="sm:text-xl md:text-3xl">
                   นางสาว พัชรียา อุตมา (อัม)
                 </h2>
               </div>
 
               {/* Ruj */}
-              <div className="flex flex-col items-center gap-4">
+              <div className="flex flex-col items-center gap-4 md:gap-10">
                 <Image
                   alt="HeroUI hero Image"
                   height={300}
@@ -45,7 +58,7 @@ export default function Home() {
                   src="/main/R02.png"
                   width={300}
                 />
-                <h2 className="text-xl font-semibold">
+                <h2 className="sm:text-xl md:text-3xl">
                   นาย อดิรุจ สองสีใส (รุจ)
                 </h2>
               </div>
@@ -63,7 +76,7 @@ export default function Home() {
                 src="/main/logo01.png"
                 width={120}
               />
-              <h1 className="text-center text-medium mx-14">
+              <h1 className="text-center sm:text-medium md:text-2xl mx-14">
                 LET&apos;S CELEBRATE TOGETHER ON OUR SPECIAL DAY ON
               </h1>
               <h1 className="text-center text-5xl pt-6 mx-6">01 NOV 2025</h1>
@@ -74,20 +87,21 @@ export default function Home() {
           </div>
           {/**Schedule */}
           <div className="flex flex-col justify-items-center items-center pt-10 gap-4">
-            <h1>SCHEDULE</h1>
-            <Image
-              alt="HeroUI hero Image"
-              radius="none"
-              src="/gallery/12.JPG"
-            />
-            <Image
-              alt="HeroUI hero Image"
-              className="sm:mx-auto"
-              height={0}
-              radius="none"
-              src="/main/plans.svg"
-              width={410}
-            />
+            <h1 className="md:text-2xl">SCHEDULE</h1>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+              <Image
+                alt="Schedule Photo"
+                className="w-full md:w-[500px] h-auto object-cover"
+                radius="none"
+                src="/gallery/23.JPG"
+              />
+              <Image
+                alt="Plans"
+                className="w-full md:w-[800px]"
+                radius="none"
+                src="/main/plans.svg"
+              />
+            </div>
           </div>
         </section>
 
